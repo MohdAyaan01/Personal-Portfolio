@@ -1,5 +1,7 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
+import Link from 'next/link';
+import Instagram from 'next-auth/providers/instagram';
 
 const GithubIcon = ({ className }: { className?: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -295,10 +297,10 @@ const page = () => {
                <h3 className="text-4xl font-black uppercase tracking-wider text-[#edece8] group-hover:text-white group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all">Neuro Glow AI</h3>
                <p className="text-[#ff7a33] font-mono text-sm tracking-[0.2em] uppercase mt-6 mb-10 font-bold bg-[#ff7a33]/10 border border-[#ff7a33]/20 inline-block px-4 py-2 rounded-md">Dec 2025 - Jan 2026</p>
                
-               <a href="#" className="inline-flex items-center gap-4 text-sm font-black tracking-[0.3em] text-white hover:text-[#0a0a0a] hover:bg-[#ff7a33] uppercase border border-white/20 hover:border-[#ff7a33] px-8 py-5 transition-all duration-300 group/btn rounded-sm hover:shadow-[0_0_30px_rgba(255,122,51,0.5)]">
+               <Link href="https://nueroglow-front-end.onrender.com" className="inline-flex items-center gap-4 text-sm font-black tracking-[0.3em] text-white hover:text-[#0a0a0a] hover:bg-[#ff7a33] uppercase border border-white/20 hover:border-[#ff7a33] px-8 py-5 transition-all duration-300 group/btn rounded-sm hover:shadow-[0_0_30px_rgba(255,122,51,0.5)]">
                  View Project 
                  <span className="text-2xl leading-none group-hover/btn:translate-x-2 group-hover/btn:-translate-y-2 transition-transform duration-300 drop-shadow-md">↗</span>
-               </a>
+               </Link>
             </div>
             <div className="w-full lg:w-2/3 relative z-10">
               <div className="flex flex-wrap gap-4 mb-10">
@@ -328,10 +330,10 @@ const page = () => {
                <h3 className="text-4xl font-black uppercase tracking-wider text-[#edece8] group-hover:text-white group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all">Pro Folio X</h3>
                <p className="text-[#ff7a33] font-mono text-sm tracking-[0.2em] uppercase mt-6 mb-10 font-bold bg-[#ff7a33]/10 border border-[#ff7a33]/20 inline-block px-4 py-2 rounded-md">Feb 2026 - Apr 2026</p>
                
-               <a href="#" className="inline-flex items-center gap-4 text-sm font-black tracking-[0.3em] text-white hover:text-[#0a0a0a] hover:bg-[#ff7a33] uppercase border border-white/20 hover:border-[#ff7a33] px-8 py-5 transition-all duration-300 group/btn rounded-sm hover:shadow-[0_0_30px_rgba(255,122,51,0.5)]">
+               <Link href="https://ai-portfolio-builder-digipodium.onrender.com" className="inline-flex items-center gap-4 text-sm font-black tracking-[0.3em] text-white hover:text-[#0a0a0a] hover:bg-[#ff7a33] uppercase border border-white/20 hover:border-[#ff7a33] px-8 py-5 transition-all duration-300 group/btn rounded-sm hover:shadow-[0_0_30px_rgba(255,122,51,0.5)]">
                  View Project 
                  <span className="text-2xl leading-none group-hover/btn:translate-x-2 group-hover/btn:-translate-y-2 transition-transform duration-300 drop-shadow-md">↗</span>
-               </a>
+               </Link>
             </div>
             <div className="w-full lg:w-2/3 relative z-10">
               <div className="flex flex-wrap gap-4 mb-10">
@@ -359,57 +361,50 @@ const page = () => {
         {/* Background Ambient Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-[#ff7a33]/5 blur-[120px] pointer-events-none"></div>
 
-        <div className="flex items-center gap-6 mb-8 relative z-10">
+        <div className="flex items-center gap-6 mb-6 relative z-10">
           <div className="h-[1px] w-24 bg-gradient-to-r from-transparent to-[#ff7a33]"></div>
           <span className="text-[#ff7a33] text-sm font-black tracking-[0.5em] uppercase drop-shadow-[0_0_10px_#ff7a33]">Contact</span>
           <div className="h-[1px] w-24 bg-gradient-to-l from-transparent to-[#ff7a33]"></div>
         </div>
-        <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-800 relative z-10 drop-shadow-2xl text-center">Contact</h2>
+        <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#ff7a33] via-white to-[#0077b5] relative z-10 drop-shadow-2xl text-center">Contact</h2>
         <p className="text-2xl md:text-3xl font-serif text-gray-500 mb-24 italic font-light relative z-10 text-center">Let's build something epic</p>
 
         <div className="relative w-full max-w-6xl group">
           {/* Animated Glow Border Effect */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#ff7a33]/30 via-white/10 to-[#ff7a33]/30 rounded-3xl blur-xl opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mx-auto relative z-10">
             {/* GitHub */}
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="group relative bg-[#030303]/90 backdrop-blur-3xl p-12 border border-white/10 rounded-3xl overflow-hidden hover:border-[#ff7a33]/50 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col items-center text-center">
+            <div className="relative group/card">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#ff7a33]/20 to-[#ff4d00]/20 rounded-3xl blur-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
+              <Link href="https://github.com/MohdAyaan01" target="_blank" rel="noopener noreferrer" className="group relative bg-[#030303]/90 backdrop-blur-3xl p-10 border border-white/10 rounded-3xl overflow-hidden hover:border-[#ff7a33]/50 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col items-center text-center">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff7a33]/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative z-10 bg-white/5 p-6 rounded-2xl mb-8 group-hover:bg-[#ff7a33]/10 transition-colors duration-500">
+              <div className="relative z-10 bg-white/5 p-6 rounded-2xl mb-6 group-hover:bg-[#ff7a33]/10 transition-colors duration-500">
                 <GithubIcon className="w-10 h-10 text-gray-400 group-hover:text-white group-hover:scale-110 transition-all duration-500" />
               </div>
               <h3 className="text-2xl font-black uppercase tracking-[0.2em] mb-3 text-white">GitHub</h3>
-              <p className="text-gray-500 font-mono text-xs tracking-widest uppercase mb-8">@MohdAyaan</p>
+              <p className="text-gray-500 font-mono text-xs tracking-widest uppercase mb-6">@MohdAyaan</p>
               <div className="flex items-center gap-3 text-[#ff7a33] font-black text-[10px] tracking-[0.4em] uppercase border border-[#ff7a33]/30 px-6 py-3 rounded-full group-hover:bg-[#ff7a33] group-hover:text-black transition-all duration-500 shadow-[0_0_20px_rgba(255,122,51,0)] group-hover:shadow-[0_0_30px_rgba(255,122,51,0.4)]">
                 Explore <ExternalLink className="w-3 h-3" />
               </div>
-            </a>
+              </Link>
+            </div>
 
             {/* LinkedIn */}
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="group relative bg-[#030303]/90 backdrop-blur-3xl p-12 border border-white/10 rounded-3xl overflow-hidden hover:border-[#ff7a33]/50 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col items-center text-center">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff7a33]/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative z-10 bg-white/5 p-6 rounded-2xl mb-8 group-hover:bg-[#ff7a33]/10 transition-colors duration-500">
-                <LinkedinIcon className="w-10 h-10 text-gray-400 group-hover:text-[#0077b5] group-hover:scale-110 transition-all duration-500" />
-              </div>
-              <h3 className="text-2xl font-black uppercase tracking-[0.2em] mb-3 text-white">LinkedIn</h3>
-              <p className="text-gray-500 font-mono text-xs tracking-widest uppercase mb-8">Mohd Ayaan</p>
-              <div className="flex items-center gap-3 text-[#ff7a33] font-black text-[10px] tracking-[0.4em] uppercase border border-[#ff7a33]/30 px-6 py-3 rounded-full group-hover:bg-[#ff7a33] group-hover:text-black transition-all duration-500 shadow-[0_0_20px_rgba(255,122,51,0)] group-hover:shadow-[0_0_30px_rgba(255,122,51,0.4)]">
-                Connect <ExternalLink className="w-3 h-3" />
-              </div>
-            </a>
-
-            {/* Twitter / X */}
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="group relative bg-[#030303]/90 backdrop-blur-3xl p-12 border border-white/10 rounded-3xl overflow-hidden hover:border-[#ff7a33]/50 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col items-center text-center">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff7a33]/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative z-10 bg-white/5 p-6 rounded-2xl mb-8 group-hover:bg-[#ff7a33]/10 transition-colors duration-500">
-                <TwitterIcon className="w-10 h-10 text-gray-400 group-hover:text-white group-hover:scale-110 transition-all duration-500" />
-              </div>
-              <h3 className="text-2xl font-black uppercase tracking-[0.2em] mb-3 text-white">Twitter</h3>
-              <p className="text-gray-500 font-mono text-xs tracking-widest uppercase mb-8">@MohdAyaan</p>
-              <div className="flex items-center gap-3 text-[#ff7a33] font-black text-[10px] tracking-[0.4em] uppercase border border-[#ff7a33]/30 px-6 py-3 rounded-full group-hover:bg-[#ff7a33] group-hover:text-black transition-all duration-500 shadow-[0_0_20px_rgba(255,122,51,0)] group-hover:shadow-[0_0_30px_rgba(255,122,51,0.4)]">
-                Follow <ExternalLink className="w-3 h-3" />
-              </div>
-            </a>
+            <div className="relative group/card">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#0077b5]/20 to-[#00a0dc]/20 rounded-3xl blur-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
+              <Link href="https://www.linkedin.com/in/mohd-ayaan-355305342?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="group relative bg-[#030303]/90 backdrop-blur-3xl p-10 border border-white/10 rounded-3xl overflow-hidden hover:border-[#0077b5]/50 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col items-center text-center">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#0077b5]/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10 bg-white/5 p-6 rounded-2xl mb-6 group-hover:bg-[#0077b5]/10 transition-colors duration-500">
+                  <LinkedinIcon className="w-10 h-10 text-gray-400 group-hover:text-[#0077b5] group-hover:scale-110 transition-all duration-500" />
+                </div>
+                <h3 className="text-2xl font-black uppercase tracking-[0.2em] mb-3 text-white">LinkedIn</h3>
+                <p className="text-gray-500 font-mono text-xs tracking-widest uppercase mb-6">Mohd Ayaan</p>
+                <div className="flex items-center gap-3 text-[#0077b5] font-black text-[10px] tracking-[0.4em] uppercase border border-[#0077b5]/30 px-6 py-3 rounded-full group-hover:bg-[#0077b5] group-hover:text-white transition-all duration-500 shadow-[0_0_20px_rgba(0,119,181,0)] group-hover:shadow-[0_0_30px_rgba(0,119,181,0.4)]">
+                  Connect <ExternalLink className="w-3 h-3" />
+                </div>
+              </Link>
+            </div>       
           </div>
         </div>
       </section>
