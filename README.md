@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Mohd Ayaan | Full-Stack Developer
 
-## Getting Started
+![Portfolio Preview](./public/image.png)
 
-First, run the development server:
+## ✨ Overview
+A premium, high-performance personal portfolio built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**. This portfolio showcases my journey as a Full-Stack Developer, featuring sophisticated motion graphics, glassmorphic design, and a curated selection of AI-powered projects.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frontend
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS 4
+- **Icons:** Lucide React
+- **Animations:** CSS Keyframes & Framer Motio
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌟 Key Features
 
-## Learn More
+- **Dynamic Hero Section:** Featuring massive ambient glows and high-impact typography.
+- **Starry Background:** A custom SVG-animated celestial backdrop.
+- **Project Showcases:** Detailed cards for major projects like **Neuro Glow AI** and **Pro Folio X**.
+- **Interactive Experience:** Smooth transitions, hover-state interactions, and glassmorphic UI components.
+- **Responsive Design:** Optimized for all screen sizes, from mobile to ultra-wide monitors.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎓 Education & Experience
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Education:** BCA @ Integral University (2023 - 2026)
+- **Experience:** 
+    - **Digi Podium:** MERN Stack Intern (Jan 2026 - Present)
+    - **Plasmid:** Frontend Intern (Jan 2025 - Mar 2025)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Local Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/MohdAyaan01/Portfolio.git
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📬 Get In Touch
+
+- **GitHub:** [@MohdAyaan01](https://github.com/MohdAyaan01)
+- **LinkedIn:** [Mohd Ayaan](https://www.linkedin.com/in/mohd-ayaan-355305342)
+
+
