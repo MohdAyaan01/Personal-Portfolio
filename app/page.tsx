@@ -75,16 +75,16 @@ const page = () => {
     <main className="min-h-screen bg-transparent text-[#edece8] font-sans selection:bg-[#ff7a33] selection:text-black overflow-x-hidden pb-20 relative">
       <StarryBackground />
       
-      {/* Hero Section */}
+   
       <section className="min-h-screen flex items-center px-6 md:px-24 pt-20 relative overflow-hidden">
-        {/* Massive Ambient Glow */}
+      
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[800px] h-[800px] bg-[#ff7a33]/10 rounded-full blur-[150px] pointer-events-none mix-blend-screen"></div>
 
         <div className="w-full max-w-6xl relative z-10">
           <div className="inline-flex items-center gap-4 mb-10 group cursor-default">
             <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#ff7a33] group-hover:w-24 transition-all duration-700"></div>
             <div className="border border-[#ff7a33]/50 text-[#ff7a33] px-5 py-2 text-xs tracking-[0.4em] font-black uppercase shadow-[0_0_15px_rgba(255,122,51,0.1)] group-hover:shadow-[0_0_30px_rgba(255,122,51,0.6)] group-hover:bg-[#ff7a33]/10 transition-all duration-500 backdrop-blur-sm">
-              Full-Stack Developer
+              Full-Stack Developer (MERN)
             </div>
             <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-[#ff7a33] group-hover:w-24 transition-all duration-700"></div>
           </div>
@@ -96,7 +96,7 @@ const page = () => {
             <span className="block text-transparent hover:text-white/10 transition-colors duration-500 cursor-default relative z-10" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.9)' }}>
               AYAAN
             </span>
-            {/* Inner Text Glow on Hover */}
+           
             <div className="absolute inset-0 bg-gradient-to-r from-[#ff7a33]/0 via-[#ff7a33]/20 to-transparent blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none z-0"></div>
           </h1>
           
@@ -108,12 +108,12 @@ const page = () => {
               <span className="text-[#ff7a33] font-medium"> Express</span>, and 
               <span className="text-[#ff7a33] font-medium"> PostgreSQL</span>.
             </p>
-            {/* Subtle interactive glow on hover */}
+  
             <div className="absolute -left-[2px] top-0 bottom-0 w-[4px] bg-[#ff7a33] opacity-0 group-hover/desc:opacity-100 blur-sm transition-opacity duration-500"></div>
           </div>
         </div>
 
-        {/* Floating Coffee ASCII Art */}
+  
         <div className="hidden xl:block absolute right-32 top-1/2 -translate-y-1/2 text-gray-700 font-mono text-xs whitespace-pre hover:text-[#ff7a33] hover:scale-110 hover:drop-shadow-[0_0_20px_#ff7a33] transition-all duration-500 cursor-default">
 {`   ( (
     ) )
@@ -152,15 +152,16 @@ const page = () => {
               <MarqueeItem title="NODE.JS" type="BACKEND" />
               <MarqueeItem title="POSTGRESQL" type="DATABASE" />
               <MarqueeItem title="MONGODB" type="DATABASE" />
-              <MarqueeItem title="JAVA" type="LANGUAGE" />
+              <MarqueeItem title="JAVA" type="LANGUAGE" />\
+              <MarqueeItem title="DOCKER" type="TOOL"/>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Education Section */}
+      
       <section id="education" className="py-40 px-6 md:px-24 max-w-6xl mx-auto flex flex-col items-center relative">
-        {/* Background glow for section */}
+      
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-[#ff7a33]/5 blur-[120px] pointer-events-none"></div>
 
         <div className="flex items-center gap-6 mb-8 relative z-10">
@@ -172,11 +173,11 @@ const page = () => {
         <p className="text-2xl md:text-3xl font-serif text-gray-500 mb-24 italic font-light text-center relative z-10">My academic foundation</p>
 
         <div className="w-full max-w-4xl border border-white/5 bg-[#0a0a0a]/40 backdrop-blur-3xl p-12 md:p-24 flex flex-col items-center justify-center relative overflow-hidden group hover:border-[#ff7a33]/40 hover:shadow-[0_0_80px_rgba(255,122,51,0.15)] hover:-translate-y-2 transition-all duration-700 rounded-3xl">
-          {/* Intense Inner Flare */}
+      
           <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[#ff7a33]/20 to-transparent blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-white/5 to-transparent blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
           
-          {/* University Logo */}
+        
           <div className="relative z-10 bg-white/5 backdrop-blur-md p-6 rounded-full mb-10 border border-white/10 group-hover:border-[#ff7a33]/50 group-hover:bg-white/10 shadow-[0_0_30px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_50px_rgba(255,122,51,0.3)] transition-all duration-700">
             <img 
               src="/MyUni.png" 
@@ -202,7 +203,7 @@ const page = () => {
         </div>
       </section>
 
-      {/* Experience Section */}
+ 
       <section id="experience" className="pt-20 pb-40 px-6 md:px-24 max-w-6xl mx-auto relative">
         <div className="flex items-center gap-6 mb-8 relative z-10">
           <div className="h-[1px] w-24 bg-gradient-to-r from-transparent to-[#ff7a33]"></div>
@@ -213,9 +214,9 @@ const page = () => {
         <p className="text-2xl md:text-3xl font-serif text-gray-500 mb-24 italic font-light relative z-10">Where I've honed my craft</p>
 
         <div className="space-y-12">
-          {/* Experience Item 1 */}
+     
           <div className="relative flex flex-col lg:flex-row gap-12 border border-white/5 bg-[#0a0a0a]/50 backdrop-blur-2xl p-12 hover:bg-white/[0.02] hover:border-[#ff7a33]/40 hover:-translate-y-2 hover:shadow-[0_30px_60px_rgba(0,0,0,0.8)] transition-all duration-500 group overflow-hidden rounded-2xl">
-            {/* Card Flare */}
+       
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#ff7a33]/10 blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
             <div className="w-full lg:w-1/3 relative z-10">
@@ -246,9 +247,9 @@ const page = () => {
             </div>
           </div>
           
-          {/* Experience Item 2 */}
+       
           <div className="relative flex flex-col lg:flex-row gap-12 border border-white/5 bg-[#0a0a0a]/50 backdrop-blur-2xl p-12 hover:bg-white/[0.02] hover:border-[#ff7a33]/40 hover:-translate-y-2 hover:shadow-[0_30px_60px_rgba(0,0,0,0.8)] transition-all duration-500 group overflow-hidden rounded-2xl">
-            {/* Card Flare */}
+     
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#ff7a33]/10 blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
             <div className="w-full lg:w-1/3 relative z-10">
@@ -277,7 +278,7 @@ const page = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
+
       <section id="projects" className="pt-20 pb-40 px-6 md:px-24 max-w-6xl mx-auto relative">
         <div className="flex items-center gap-6 mb-8 relative z-10">
           <div className="h-[1px] w-24 bg-gradient-to-r from-transparent to-[#ff7a33]"></div>
@@ -288,9 +289,9 @@ const page = () => {
         <p className="text-2xl md:text-3xl font-serif text-gray-500 mb-24 italic font-light relative z-10">Things I've built</p>
 
         <div className="space-y-12">
-          {/* Project 1 */}
+   
           <div className="relative flex flex-col lg:flex-row gap-12 border border-white/5 bg-[#0a0a0a]/50 backdrop-blur-2xl p-12 hover:bg-white/[0.02] hover:border-[#ff7a33]/40 hover:-translate-y-2 hover:shadow-[0_30px_60px_rgba(0,0,0,0.8)] transition-all duration-500 group overflow-hidden rounded-2xl">
-            {/* Card Flare */}
+       
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#ff7a33]/15 blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
             <div className="w-full lg:w-1/3 relative z-10">
@@ -321,9 +322,9 @@ const page = () => {
             </div>
           </div>
 
-          {/* Project 2 */}
+   
           <div className="relative flex flex-col lg:flex-row gap-12 border border-white/5 bg-[#0a0a0a]/50 backdrop-blur-2xl p-12 hover:bg-white/[0.02] hover:border-[#ff7a33]/40 hover:-translate-y-2 hover:shadow-[0_30px_60px_rgba(0,0,0,0.8)] transition-all duration-500 group overflow-hidden rounded-2xl">
-            {/* Card Flare */}
+
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#ff7a33]/15 blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
             <div className="w-full lg:w-1/3 relative z-10">
@@ -356,9 +357,9 @@ const page = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+     
       <section id="contact" className="pt-20 pb-40 px-6 md:px-24 max-w-6xl mx-auto relative flex flex-col items-center">
-        {/* Background Ambient Glow */}
+
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-[#ff7a33]/5 blur-[120px] pointer-events-none"></div>
 
         <div className="flex items-center gap-6 mb-6 relative z-10">
@@ -370,11 +371,9 @@ const page = () => {
         <p className="text-2xl md:text-3xl font-serif text-gray-500 mb-24 italic font-light relative z-10 text-center">Let's build something epic</p>
 
         <div className="relative w-full max-w-6xl group">
-          {/* Animated Glow Border Effect */}
-
-          
+           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mx-auto relative z-10">
-            {/* GitHub */}
+        
             <div className="relative group/card">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#ff7a33]/20 to-[#ff4d00]/20 rounded-3xl blur-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
               <Link href="https://github.com/MohdAyaan01" target="_blank" rel="noopener noreferrer" className="group relative bg-[#030303]/90 backdrop-blur-3xl p-10 border border-white/10 rounded-3xl overflow-hidden hover:border-[#ff7a33]/50 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col items-center text-center">
@@ -390,7 +389,7 @@ const page = () => {
               </Link>
             </div>
 
-            {/* LinkedIn */}
+         
             <div className="relative group/card">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#0077b5]/20 to-[#00a0dc]/20 rounded-3xl blur-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
               <Link href="https://www.linkedin.com/in/mohd-ayaan-355305342?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="group relative bg-[#030303]/90 backdrop-blur-3xl p-10 border border-white/10 rounded-3xl overflow-hidden hover:border-[#0077b5]/50 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col items-center text-center">
