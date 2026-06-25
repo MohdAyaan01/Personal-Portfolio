@@ -154,6 +154,8 @@ const page = () => {
               <MarqueeItem title="MONGODB" type="DATABASE" />
               <MarqueeItem title="JAVA" type="LANGUAGE" />\
               <MarqueeItem title="DOCKER" type="TOOL"/>
+                  <MarqueeItem title="GIT" type="TOOL"/>
+                      <MarqueeItem title="GITHUB" type="TOOL"/>
             </div>
           ))}
         </div>
